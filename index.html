@@ -152,6 +152,9 @@
       .sticky .button{width:100%;min-height:52px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+      /* 日本語の折り返し：文節で区切り、見出しは行の長さをそろえる */
+    body{word-break:auto-phrase;line-break:strict}
+    p,li,td,th,summary,h1,h2,h3,.note,.rule p,.completion b,.bridge-lead{text-wrap:pretty}
   </style>
 </head>
 <body>
@@ -265,7 +268,7 @@ Web検索を使って、Amazonで現在買えるアイテムを以下の表に�
       <div class="wrap">
         <div class="message-card">
           <p class="eyebrow">MESSAGE</p>
-          <h2>バーチャル模様替え、<br>楽しんでいただけましたか？</h2>
+          <h2>バーチャル模様替え、<br>楽しんでいただけ<br>ましたか？</h2>
           <p>私も54歳のとき、<br>パソコンがまったく分からない状態からAIを学び始め、<br>今ではこんなプロンプトはさくっと作れるようになりました。</p>
           <p>そして、今は、AIを活用して副収入も得られるようになりました。</p>
           <p><strong>「このままでいいのかな……」</strong><br>そう思ってる同世代のみなさん。</p>
